@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Web Developer",
+    company: "Fiverr",
+    description:
+      "Desarrollar sitios web profesionales y funcionales utilizando HTML, CSS, JavaScript y Bootstrap. Crear diseños responsivos y rápidos que fueran fáciles de navegar. Cumplir con los estándares de calidad de W3C.",
+    link: "https://es.fiverr.com/deniskawata",
+  }
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
